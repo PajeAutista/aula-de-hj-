@@ -9,11 +9,20 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
     <h2>Temporizador</h2>
-    
+</div>
     <script>
+        
+        function disparaAlerta() {
+            var app = document.querySelector('#app');
+            texto = app.textContent;
+            alert(texto)
 
+
+        }
+
+        setInterval(disparaAlerta, 4000)
 
     </script>
 </body>
